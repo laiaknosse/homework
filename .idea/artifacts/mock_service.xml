@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mock-service">
+    <output-path>$PROJECT_DIR$/out/artifacts/mock_service</output-path>
+    <root id="archive" name="mock-service.jar">
+      <element id="module-output" name="mock-service" />
+    </root>
+  </artifact>
+</component>
