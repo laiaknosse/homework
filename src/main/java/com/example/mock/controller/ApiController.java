@@ -3,6 +3,7 @@ package com.example.mock.controller;
 import com.example.mock.dto.LoginRequest;
 import com.example.mock.dto.LoginResponse;
 import com.example.mock.dto.StatusResponse;
+import jakarta.annotation.Nonnull;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,7 +28,7 @@ public class ApiController {
     }
 
     @PostMapping("/login")
-    public LoginResponse postLogin(@Valid @RequestBody LoginRequest request) {
+    public LoginResponse postLogin(@Nonnull @Valid @RequestBody LoginRequest request) {
         delay();
         String currentDate = LocalDateTime.now().format(DATE_FORMATTER);
         return new LoginResponse(request.getLogin(), request.getPassword(), currentDate);
