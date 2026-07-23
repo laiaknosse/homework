@@ -1,0 +1,5 @@
+com\example\mock\controller\ApiController.class
+com\example\mock\dto\LoginResponse.class
+com\example\mock\MockApplication.class
+com\example\mock\dto\LoginRequest.class
+com\example\mock\dto\StatusResponse.class
